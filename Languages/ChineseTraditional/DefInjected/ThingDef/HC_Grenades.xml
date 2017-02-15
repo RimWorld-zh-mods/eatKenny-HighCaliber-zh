@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- M14 Incendiray Grenade -->
+
+  <Proj_M14Grenade_HC.label>M14灼熱彈</Proj_M14Grenade_HC.label>
+
+  <Weapon_M14Grenade_HC.label>M14灼熱彈</Weapon_M14Grenade_HC.label>
+  <Weapon_M14Grenade_HC.description>燃燒手榴彈，是通過劇烈化學反應產生極高溫度火焰的爆炸裝置。</Weapon_M14Grenade_HC.description>
+  <Weapon_M14Grenade_HC.verbs.0.label>投擲M14灼熱彈</Weapon_M14Grenade_HC.verbs.0.label>
+
+
+</LanguageData>

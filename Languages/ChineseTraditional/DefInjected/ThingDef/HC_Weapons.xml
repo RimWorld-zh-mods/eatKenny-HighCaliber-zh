@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Bullet_25mmGrenade_HC.label>25mm榴彈</Bullet_25mmGrenade_HC.label>
+
+  <Gun_XM25_HC.label>XM25 CDTE</Gun_XM25_HC.label>
+  <Gun_XM25_HC.description>XM25反防禦目標應對系統（XM25 Counter Defilade Target Engagement System，簡稱：CDTE），也被稱為“懲罰者”（英語：The Punisher）或單兵半自動空爆系統（Individual Semiautomatic Air Burst System），是由XM29 OICW衍生出來的空爆榴彈發射器。</Gun_XM25_HC.description>
+
+  <Bullet_12gauge_HC.label>12號徑霰彈</Bullet_12gauge_HC.label>
+
+  <Gun_Saiga12K_HC.label>Saiga-12K</Gun_Saiga12K_HC.label>
+  <Gun_Saiga12K_HC.description>Saiga-12K（俄語：Сайга-12）是一種12號徑自動霰彈槍，仿照卡拉什尼科夫系列突擊步槍並以賽加（Saiga）羚羊命名。其結構原理基於卡拉什尼科夫步槍，包括長行程活塞導氣系統，兩個大形閉鎖突筍的回轉式槍機、盒形彈匣供彈。</Gun_Saiga12K_HC.description>
+
+  <Bullet_dot338Lapua_HC.label>.338拉普-馬格南子彈</Bullet_dot338Lapua_HC.label>
+
+  <Gun_AWM_HC.label>精密國際 AWM</Gun_AWM_HC.label>
+  <Gun_AWM_HC.description>精密國際AWM為英國精密國際研發的北極作戰系列的栓動式狙擊步槍，另稱AWSM，AWSM較常指搭載著.338拉普-馬格南子彈的AWM。\n\n精密國際AWM：Accuracy International Arctic Warfare Magnum\nAWSM：Accuracy International Arctic Warfare Super Magnum</Gun_AWM_HC.description>
+
+  <Bullet_dot50BMG_HC.label>.50BMG子彈</Bullet_dot50BMG_HC.label>
+
+  <Gun_M82_HC.label>巴雷特 M82</Gun_M82_HC.label>
+  <Gun_M82_HC.description>巴雷特M82（Barrett M82），由美國巴雷特火器製造有限公司製造的槍管短後坐原理、半自動反器材步槍。被世界各國和軍隊採用。儘管作為反器材步槍而設計，很多武裝力量將之作為反人員狙擊步槍。</Gun_M82_HC.description>
+
+  <Bullet_7dot62x54mmR_HC.label>7.62x54mmR子彈</Bullet_7dot62x54mmR_HC.label>
+
+  <Gun_DragunovSVU_HC.label>德拉貢諾夫 SVU</Gun_DragunovSVU_HC.label>
+  <Gun_DragunovSVU_HC.description>OTs-03 SVU狙擊步槍 (俄語: Снайперская винтовка укороченная, Snayperskaya Vintovka Ukorochennaya, 意為短狙擊步槍) 基本上是SVD的無托結構縮短型，基型槍配裝摺疊式機械瞄準具。SVU是在1991年開始為俄羅斯執法機構特種部隊的城市戰鬥需要而研製的戰術步槍，在1994年時已經被內務部部隊和OMON在車臣中使用過。高傷害，遠射程和非常良好的精度。</Gun_DragunovSVU_HC.description>
+
+  <Bullet_5dot7x28mm_HC.label>5.7×28mm子彈</Bullet_5dot7x28mm_HC.label>
+
+  <Gun_P90_HC.label>FN P90TR</Gun_P90_HC.label>
+  <Gun_P90_HC.description>P90是由比利時FN赫斯塔爾公司設計製造的個人防衛武器(Personal Defence Weapon，簡稱PDW)。P90是為了回應北約替換9x19mm巴拉貝魯姆(Parabellum)手槍彈需求，是為駕駛員、後勤人員、特種部隊、反恐部隊設計的，小巧火力充足。</Gun_P90_HC.description>
+
+  <Bullet_9x19mm_HC.label>9x19mm巴拉貝魯姆手槍彈</Bullet_9x19mm_HC.label>
+
+  <Gun_MP5_HC.label>HK MP5A3</Gun_MP5_HC.label>
+  <Gun_MP5_HC.description>MP5系列是由德國軍械廠黑克勒-科赫（Heckler&amp;Koch）所設計製造的衝鋒槍。低傷害短射程，非常高的射速。</Gun_MP5_HC.description>
+
+  <Bullet_dot45ACP_HC.label>.45ACP子彈</Bullet_dot45ACP_HC.label>
+
+  <Gun_UMP45_HC.label>HK UMP45</Gun_UMP45_HC.label>
+  <Gun_UMP45_HC.description>UMP45通用衝鋒槍是由德國軍械廠黑克勒-科赫（Heckler&amp;Koch）所設計製造的衝鋒槍。UMP45裝備於各種機構，如美國海關及邊境保衛局。黑克勒-科赫開發UMP45用於取代MP5。</Gun_UMP45_HC.description>
+
+  <Bullet_5dot45x39mm_HC.label>5.45x39mm子彈</Bullet_5dot45x39mm_HC.label>
+
+  <Gun_AK74M_HC.label>AK-74M</Gun_AK74M_HC.label>
+  <Gun_AK74M_HC.description>AK-74是俄羅斯設計師卡拉什尼科夫於20世紀70年代早期研發的一種突擊步槍，用於取代更早的AKM。使用更小的5.45×39mm槍彈，代替更早的卡拉什尼科夫式武器的7.62×39mm槍彈。（M——俄語：Модернизированный，意為“現代化”）</Gun_AK74M_HC.description>
+
+  <Gun_AKS74U_HC.label>AKS-74U</Gun_AKS74U_HC.label>
+  <Gun_AKS74U_HC.description>AKS-74U短突擊步槍（又稱AKSU-74或AK-74SU）是在20世紀70年代晚期由AKS-74突擊步槍發展而來。AKS-74U作為坦克、直升機和其他車輛成員，以及特種部隊的個人防衛武器。AKS-74U具有經典衝鋒槍的尺寸和有效射程，但也有突擊步槍和機槍的有點。（U——俄語：Укороченный，意為“縮短”。）</Gun_AKS74U_HC.description>
+
+  <Bullet_5dot56x45mm_HC.label>5.56x45mm北約子彈</Bullet_5dot56x45mm_HC.label>
+
+  <Gun_FAMAS_HC.label>FAMAS G2</Gun_FAMAS_HC.label>
+  <Gun_FAMAS_HC.description>FAMAS是由法國國有奈克斯特（Nexter）集團旗下的聖-艾蒂安武器工廠（Saint-Étienne Weapon Factory）設計生產的無托式輕型自動步槍。法國部隊的制式步槍。</Gun_FAMAS_HC.description>
+
+  <Gun_M4A1_HC.label>M4A1</Gun_M4A1_HC.label>
+  <Gun_M4A1_HC.description>M4卡賓槍是M16A2突擊步槍的縮短輕型版，由美國軍隊大量裝備並取代M16突擊步槍，在大多數美國軍隊和美國海軍陸戰隊中作為基本步兵武器。</Gun_M4A1_HC.description>
+
+  <Gun_SG553_HC.label>SIG SG553</Gun_SG553_HC.label>
+  <Gun_SG553_HC.description>SIG SG 553，SIG SG 552微改進型，SIG SG 550的縮短版本卡賓槍，由Swiss Arms（前身為SIG Arms）製造。發射5.56x45mm北約槍彈。</Gun_SG553_HC.description>
+
+  <Gun_AUG_HC.label>斯太爾 AUG A3</Gun_AUG_HC.label>
+  <Gun_AUG_HC.description>斯太爾AUG是奧地利的無托式5.56×45mm北約口徑突擊步槍，20世紀60年代由斯太爾-曼利徹爾公司（Steyr Mannlicher GmbH）設計。</Gun_AUG_HC.description>
+
+  <Gun_G36_HC.label>HK G36</Gun_G36_HC.label>
+  <Gun_G36_HC.description>HK G36是5.56×45mm北約口徑突擊步槍，20世紀90年代初由德國黑克勒-科赫公司（Heckler&amp;Koch）設計，取代更重的7.62mm口徑G3攻擊步槍。G36在1997年取代G3成為德國聯邦國防軍的制式步槍。傷害和射程平均，高射速和精度。</Gun_G36_HC.description>
+
+  <Gun_MG4_HC.label>HK MG4</Gun_MG4_HC.label>
+  <Gun_MG4_HC.description>MG4是由德國黑克勒-科赫公司（Heckler&amp;Koch）設計生產的彈鏈供彈式5.56mm口徑輕機槍。被設計為輕型的、為用戶提供最大安全保障以及在不利條件下的功能可靠性，可使用多種不同的彈藥而不需要調整導氣系統。</Gun_MG4_HC.description>
+
+  <Bullet_7dot62x51mm_HC.label>7.62x51mm北約子彈</Bullet_7dot62x51mm_HC.label>
+
+  <Gun_SCAR-H_HC.label>FN SCAR-H</Gun_SCAR-H_HC.label>
+  <Gun_SCAR-H_HC.description>特種部隊戰鬥突擊步槍（英文：SOF Combat Assault Rifle，縮寫：SCAR），是比利時FN赫斯塔（FN Herstal）爾公司為了滿足美國特種作戰司令部的SCAR標案而研發的現代步槍。</Gun_SCAR-H_HC.description>
+
+  <Gun_Mk14EBR_HC.label>Mk14 EBR</Gun_Mk14EBR_HC.label>
+  <Gun_Mk14EBR_HC.description>Mk14增強型攻擊步槍，是一種美國擊發調變式軍用神射手步槍，發射7.62×51mm北約槍彈。它是M14戰鬥步槍的一個衍生型，原本專為美國特種作戰司令部以下的單位所使用，例如美國海軍海豹部隊、三角洲部隊和任務具體的官方發展援助單位。增強型攻擊步槍在戰鬥定位上同時扮演著精確射手步槍（英語：Designated marksman rifle，縮寫：DMR）和近身距離作戰（英語：Close Quarter Battle，縮寫：CQB）兩種類型角色。</Gun_Mk14EBR_HC.description>
+
+  <Gun_Glock17_HC.label>格洛克 17</Gun_Glock17_HC.label>
+  <Gun_Glock17_HC.description>格洛克17，是9mm口徑的，短後座力行程、閉鎖槍機半自動手槍，全球執法部隊使用最廣泛的手槍。</Gun_Glock17_HC.description>
+
+  <Bullet_dot50AE_HC.label>.50AE子彈</Bullet_dot50AE_HC.label>
+
+  <Gun_DesertEagle_HC.label>沙漠之鷹</Gun_DesertEagle_HC.label>
+  <Gun_DesertEagle_HC.description>沙漠之鷹，美國馬格南研究公司（Magnum Research Inc.）研製，以色列軍事工業公司（IMI）生產的大威力半自動手槍。</Gun_DesertEagle_HC.description>
+
+  <Bullet_dot500Mag_HC.label>.500馬格南子彈</Bullet_dot500Mag_HC.label>
+
+  <Gun_SW500_HC.label>史密斯威森 M500</Gun_SW500_HC.label>
+  <Gun_SW500_HC.description>史密斯威森M500左輪手槍，史密斯-威森(Smith&amp;Wesson)公司生產的5發裝、單/雙動擊發的大口徑左輪手槍，發射.500馬格南子彈（一種.50口徑子彈）。</Gun_SW500_HC.description>
+
+  <Gun_P226_HC.label>SIG Sauer P226</Gun_P226_HC.label>
+  <Gun_P226_HC.description>P226是由西格&amp;紹爾（SIG Sauer）公司製造的全尺寸軍用型半自動手槍，P226以及其衍生型在世界各地多個執法機關和軍事組織之中服役。</Gun_P226_HC.description>
+
+  <Gun_HK45_HC.label>HK45</Gun_HK45_HC.label>
+  <Gun_HK45_HC.description>HK45手槍是由黑克勒和科赫公司設計及生產的半自動手槍。HK45的設計目的是要滿足美軍“聯合戰鬥手槍”（簡稱：JCP）計劃之中的各項規定，而計劃的目的就是為了令美軍裝備一把可同時發射.45ACP、普通彈藥的半自動手槍，取代9mm口徑子彈的M9手槍。</Gun_HK45_HC.description>
+
+  <Gun_Fiveseven_HC.label>FN57式</Gun_Fiveseven_HC.label>
+  <Gun_Fiveseven_HC.description>FN57式手槍（FN Five-seveN），比利時FN赫斯塔爾公司設計製造的半自動手槍。其名稱來自其使用的子彈直徑5.7毫米，與P90個人防衛武器和FN 5.7×28mm口徑子彈同時研發。</Gun_Fiveseven_HC.description>
+
+
+</LanguageData>
