@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs> 
+  
+  
+  
+ 
+ 
+
+  <ThingDef Name="BaseGunNoQuality" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <smeltProducts>
+      <Steel>20</Steel>
+    </smeltProducts>
+  </ThingDef>
+
+<!-- ============================================================== -->
+
+<ThingDef ParentName="BaseBullet">
+    <defName>Bullet_60mmMortarShell_HC</defName>
+    <label>60mm mortar shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellBomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <speed>23</speed>
+      <explosionRadius>2.5</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>ArtilleryHitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+<ThingDef ParentName="BaseGunNoQuality">
+    <defName>Gun_M224Mortar_HC</defName>
+    <label>M224 mortar</label>
+    <description>The M224 60 mm Lightweight Mortar is a smooth bore, muzzle-loading, high-angle-of-fire weapon used for close-in support of ground troops.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon_M224Mortar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>16</Mass>
+      <AccuracyTouch>0.79</AccuracyTouch>
+      <AccuracyShort>0.42</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.06</AccuracyLong>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>Gun</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_60mmMortarShell_HC</projectileDef>
+        <forcedMissRadius>14</forcedMissRadius>
+        <warmupTime>5</warmupTime>
+        <range>70</range>
+        <minRange>15</minRange>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Mortar_LaunchA</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <smeltProducts>
+      <Steel>150</Steel>
+    </smeltProducts>
+</ThingDef>
+
+</ThingDefs>
