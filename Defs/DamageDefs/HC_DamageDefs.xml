@@ -9,7 +9,6 @@
     <defName>HC_ArmorPiercing</defName>
     <label>armor-piercing</label>
     <externalViolence>true</externalViolence>
-    <battleWound>true</battleWound>
     <deathMessage>{0} has been shot to death.</deathMessage>
     <hediff>Gunshot</hediff>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>

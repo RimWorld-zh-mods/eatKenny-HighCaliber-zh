@@ -114,7 +114,7 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>1700</MarketValue>
+      <MarketValue>750</MarketValue>
       <Mass>6</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.50</AccuracyShort>
@@ -125,9 +125,6 @@
     <weaponTags>
       <li>AdvancedGun</li>
     </weaponTags>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -166,13 +163,13 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>850</MarketValue>
+      <MarketValue>450</MarketValue>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.77</AccuracyMedium>
-      <AccuracyLong>0.64</AccuracyLong>
-      <RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.48</AccuracyMedium>
+      <AccuracyLong>0.39</AccuracyLong>
+      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>AdvancedGun</li>
@@ -183,9 +180,9 @@
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_12gauge_HC</projectileDef>
         <warmupTime>0.9</warmupTime>
-        <range>16</range>
-        <burstShotCount>2</burstShotCount>
-        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <range>12</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <soundCast>ShotSaiga12K</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -217,13 +214,13 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>1700</MarketValue>
+      <MarketValue>850</MarketValue>
       <Mass>6</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.90</AccuracyShort>
-      <AccuracyMedium>0.94</AccuracyMedium>
-      <AccuracyLong>0.94</AccuracyLong>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <AccuracyShort>0.92</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.96</AccuracyLong>
+      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
@@ -276,13 +273,13 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>1800</MarketValue>
+      <MarketValue>925</MarketValue>
       <Mass>11</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
-      <AccuracyShort>0.90</AccuracyShort>
-      <AccuracyMedium>0.94</AccuracyMedium>
-      <AccuracyLong>0.94</AccuracyLong>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <AccuracyShort>0.92</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.96</AccuracyLong>
+      <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
@@ -320,7 +317,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>25</damageAmountBase>
       <speed>100</speed>
     </projectile>
   </ThingDef>
@@ -335,13 +332,13 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>1500</MarketValue>
+      <MarketValue>725</MarketValue>
       <Mass>3.7</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.92</AccuracyShort>
       <AccuracyMedium>0.90</AccuracyMedium>
       <AccuracyLong>0.86</AccuracyLong>
-      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.06</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
@@ -382,13 +379,13 @@
     </graphicData>
     <soundInteract>InteractSMG</soundInteract>
     <statBases>
-      <MarketValue>800</MarketValue>
+      <MarketValue>500</MarketValue>
       <Mass>2.7</Mass>
-      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.42</AccuracyMedium>
-      <AccuracyLong>0.25</AccuracyLong>
-      <RangedWeapon_Cooldown>1.06</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.27</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>AdvancedGun</li>
@@ -400,7 +397,7 @@
         <projectileDef>Bullet_5dot7x28mm_HC</projectileDef>
         <warmupTime>0.5</warmupTime>
         <range>24</range>
-        <burstShotCount>5</burstShotCount>
+        <burstShotCount>4</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>ShotP90</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
@@ -433,21 +430,21 @@
     </graphicData>
     <soundInteract>InteractSMG</soundInteract>
     <statBases>
-      <MarketValue>750</MarketValue>
+      <MarketValue>475</MarketValue>
       <Mass>3.2</Mass>
-      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.62</AccuracyMedium>
-      <AccuracyLong>0.35</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.59</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_9x19mm_HC</projectileDef>
-        <warmupTime>0.5</warmupTime>
-        <range>26</range>
+        <warmupTime>0.6</warmupTime>
+        <range>24</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>ShotMP5</soundCast>
@@ -466,8 +463,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>14</damageAmountBase>
-      <speed>50</speed>
+      <damageAmountBase>13</damageAmountBase>
+      <speed>48</speed>
     </projectile>
   </ThingDef>
 
@@ -481,20 +478,20 @@
     </graphicData>
     <soundInteract>InteractSMG</soundInteract>
     <statBases>
-      <MarketValue>750</MarketValue>
+      <MarketValue>450</MarketValue>
       <Mass>2.5</Mass>
-      <AccuracyTouch>0.95</AccuracyTouch>
-      <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.37</AccuracyMedium>
-      <AccuracyLong>0.22</AccuracyLong>
-      <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.89</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.24</AccuracyLong>
+      <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_dot45ACP_HC</projectileDef>
-        <warmupTime>0.5</warmupTime>
+        <warmupTime>0.6</warmupTime>
         <range>20</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -529,12 +526,12 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>625</MarketValue>
+      <MarketValue>425</MarketValue>
       <Mass>3.4</Mass>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.63</AccuracyMedium>
-      <AccuracyLong>0.41</AccuracyLong>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.60</AccuracyLong>
       <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -542,8 +539,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_5dot45x39mm_HC</projectileDef>
-        <warmupTime>0.8</warmupTime>
-        <range>29</range>
+        <warmupTime>0.9</warmupTime>
+        <range>31</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <soundCast>ShotAK74M</soundCast>
@@ -563,12 +560,12 @@
     </graphicData>
     <soundInteract>InteractSMG</soundInteract>
     <statBases>
-      <MarketValue>575</MarketValue>
+      <MarketValue>425</MarketValue>
       <Mass>3</Mass>
-      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyTouch>0.80</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.49</AccuracyMedium>
-      <AccuracyLong>0.18</AccuracyLong>
+      <AccuracyMedium>0.57</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
       <RangedWeapon_Cooldown>1.16</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -576,7 +573,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_5dot45x39mm_HC</projectileDef>
-        <warmupTime>0.6</warmupTime>
+        <warmupTime>0.7</warmupTime>
         <range>26</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -602,6 +599,45 @@
   </ThingDef>
 
 <ThingDef ParentName="BaseHumanGun">
+    <defName>Gun_FATAL515_HC</defName>
+    <label>FATAL 515</label>
+    <description>The FATAL 515 is a advanced next-generation assault rifle designed based on Bushmaster ACR, it has improved accuracy and stability.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Gun_FATAL515</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <MarketValue>875</MarketValue>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.92</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
+    </statBases>
+    <generateCommonality>0.30</generateCommonality>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+	<li>AdvancedGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <warmupTime>0.7</warmupTime>
+        <range>32</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>ShotG36</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<ThingDef ParentName="BaseHumanGun">
     <defName>Gun_FAMAS_HC</defName>
     <label>FAMAS G2</label>
     <description>The FAMAS is a bullpup-styled assault rifle designed and manufactured in France by MAS located in Saint-Étienne, which is now a member of the French government-owned Nexter group. It is the service rifle of the French military.</description>
@@ -611,9 +647,9 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>900</MarketValue>
+      <MarketValue>600</MarketValue>
       <Mass>3.5</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.83</AccuracyMedium>
       <AccuracyLong>0.74</AccuracyLong>
@@ -648,9 +684,9 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>850</MarketValue>
+      <MarketValue>550</MarketValue>
       <Mass>3.3</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyTouch>0.80</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.81</AccuracyMedium>
       <AccuracyLong>0.69</AccuracyLong>
@@ -683,9 +719,9 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>950</MarketValue>
+      <MarketValue>625</MarketValue>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyTouch>0.80</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.89</AccuracyMedium>
       <AccuracyLong>0.82</AccuracyLong>
@@ -720,9 +756,9 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>950</MarketValue>
+      <MarketValue>625</MarketValue>
       <Mass>3.5</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.78</AccuracyLong>
@@ -757,9 +793,9 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>950</MarketValue>
+      <MarketValue>625</MarketValue>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.85</AccuracyMedium>
       <AccuracyLong>0.78</AccuracyLong>
@@ -794,7 +830,7 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>1400</MarketValue>
+      <MarketValue>850</MarketValue>
       <Mass>8.2</Mass>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
@@ -852,13 +888,13 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>1500</MarketValue>
+      <MarketValue>725</MarketValue>
       <Mass>3.4</Mass>
-      <AccuracyTouch>0.90</AccuracyTouch>
+      <AccuracyTouch>0.75</AccuracyTouch>
       <AccuracyShort>0.90</AccuracyShort>
       <AccuracyMedium>0.88</AccuracyMedium>
       <AccuracyLong>0.80</AccuracyLong>
-      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.46</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>AdvancedGun</li>
@@ -868,8 +904,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_7dot62x51mm_HC</projectileDef>
-        <warmupTime>0.9</warmupTime>
-        <range>36</range>
+        <warmupTime>1</warmupTime>
+        <range>35</range>
         <burstShotCount>2</burstShotCount>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <soundCast>ShotSCAR_H</soundCast>
@@ -889,13 +925,13 @@
     </graphicData>
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
-      <MarketValue>1250</MarketValue>
+      <MarketValue>650</MarketValue>
       <Mass>4</Mass>
       <AccuracyTouch>0.75</AccuracyTouch>
-      <AccuracyShort>0.94</AccuracyShort>
-      <AccuracyMedium>0.94</AccuracyMedium>
-      <AccuracyLong>0.89</AccuracyLong>
-      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      <AccuracyShort>0.96</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.92</AccuracyLong>
+      <RangedWeapon_Cooldown>1.06</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>SniperRifle</li>
@@ -905,7 +941,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_7dot62x51mm_HC</projectileDef>
-        <warmupTime>1.7</warmupTime>
+        <warmupTime>1.2</warmupTime>
         <range>40</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>ShotMk14EBR</soundCast>
@@ -925,7 +961,7 @@
     </graphicData>
     <soundInteract>InteractPistol</soundInteract>
     <statBases>
-      <MarketValue>200</MarketValue>
+      <MarketValue>175</MarketValue>
       <Mass>0.9</Mass>
       <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.69</AccuracyShort>
@@ -975,21 +1011,21 @@
     </graphicData>
     <soundInteract>InteractPistol</soundInteract>
     <statBases>
-      <MarketValue>525</MarketValue>
+      <MarketValue>300</MarketValue>
       <Mass>2</Mass>
       <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.68</AccuracyShort>
-      <AccuracyMedium>0.33</AccuracyMedium>
-      <AccuracyLong>0.12</AccuracyLong>
-      <RangedWeapon_Cooldown>1.66</RangedWeapon_Cooldown>
+      <AccuracyMedium>0.39</AccuracyMedium>
+      <AccuracyLong>0.23</AccuracyLong>
+      <RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_dot50AE_HC</projectileDef>
-        <warmupTime>0.45</warmupTime>
-        <range>20</range>
+        <warmupTime>0.4</warmupTime>
+        <range>18</range>
         <soundCast>Shot50AE500MAG</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1021,12 +1057,12 @@
     </graphicData>
     <soundInteract>InteractPistol</soundInteract>
     <statBases>
-      <MarketValue>525</MarketValue>
+      <MarketValue>300</MarketValue>
       <Mass>2</Mass>
       <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.68</AccuracyShort>
-      <AccuracyMedium>0.30</AccuracyMedium>
-      <AccuracyLong>0.09</AccuracyLong>
+      <AccuracyMedium>0.36</AccuracyMedium>
+      <AccuracyLong>0.18</AccuracyLong>
       <RangedWeapon_Cooldown>1.76</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -1035,7 +1071,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_dot500Mag_HC</projectileDef>
         <warmupTime>0.5</warmupTime>
-        <range>20</range>
+        <range>18</range>
         <soundCast>Shot50AE500MAG</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -1054,12 +1090,12 @@
     </graphicData>
     <soundInteract>InteractPistol</soundInteract>
     <statBases>
-      <MarketValue>325</MarketValue>
+      <MarketValue>250</MarketValue>
       <Mass>1</Mass>
       <AccuracyTouch>0.94</AccuracyTouch>
       <AccuracyShort>0.87</AccuracyShort>
-      <AccuracyMedium>0.69</AccuracyMedium>
-      <AccuracyLong>0.51</AccuracyLong>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.41</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -1088,13 +1124,13 @@
     </graphicData>
     <soundInteract>InteractPistol</soundInteract>
     <statBases>
-      <MarketValue>325</MarketValue>
+      <MarketValue>250</MarketValue>
       <Mass>0.9</Mass>
       <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.71</AccuracyShort>
       <AccuracyMedium>0.50</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
-      <RangedWeapon_Cooldown>1.46</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>BallisticShield_ValidSidearm</li>
@@ -1124,12 +1160,12 @@
     </graphicData>
     <soundInteract>InteractPistol</soundInteract>
     <statBases>
-      <MarketValue>325</MarketValue>
+      <MarketValue>250</MarketValue>
       <Mass>0.7</Mass>
       <AccuracyTouch>0.94</AccuracyTouch>
       <AccuracyShort>0.88</AccuracyShort>
-      <AccuracyMedium>0.71</AccuracyMedium>
-      <AccuracyLong>0.55</AccuracyLong>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.61</AccuracyLong>
       <RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>

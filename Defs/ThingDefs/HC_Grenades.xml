@@ -1,41 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-  <!-- ==================== Bases ========================== -->
-
-  <ThingDef Name="BaseEquipment" Abstract="True">
-    <equipmentType>Secondary</equipmentType>
-    <label>equipment lacks label</label>
-    <thingClass>ThingWithComps</thingClass>
-    <category>Item</category>
-    <useHitPoints>true</useHitPoints>
-    <selectable>true</selectable>
-    <graphicData>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>1</DeteriorationRate>
-      <SellPriceFactor>0.5</SellPriceFactor>
-    </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <description>Equipment lacks desc.</description>
-    <comps>
-      <li>
-        <compClass>CompForbiddable</compClass>
-      </li>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-    </comps>
-    <alwaysHaulable>true</alwaysHaulable>
-    <tickerType>Never</tickerType>
-  </ThingDef>
-
-
-  <ThingDef Name="BaseGrenadeProjectile" Abstract="True">
+	<ThingDef Name="BaseGrenadeProjectile" Abstract="True">
     <category>Projectile</category>
     <altitudeLayer>Projectile</altitudeLayer>
     <thingClass>Projectile_Explosive</thingClass>
@@ -70,7 +36,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseEquipment">
+  <ThingDef ParentName="BaseWeapon">
     <defName>Weapon_M14Grenade_HC</defName>
     <equipmentType>Primary</equipmentType>
     <label>M14 incendiray grenade</label>
@@ -102,11 +68,66 @@
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <ai_IsIncendiary>true</ai_IsIncendiary>
-        <soundCast>ThrowMolotovCocktail</soundCast>
+        <soundCast>ThrowGrenade</soundCast>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
         <projectileDef>Proj_M14Grenade_HC</projectileDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+<!-- ==================== Flashbang ========================== -->
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Proj_M84StunGrenade_HC</defName>
+    <label>Stun grenade</label>
+    <graphicData>
+      <texPath>Things/Projectile/M84StunGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius >3.5</explosionRadius >
+      <damageDef>Stun</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <explosionDelay>100</explosionDelay>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeapon">
+    <defName>Weapon_M84StunGrenade_HC</defName>
+    <equipmentType>Primary</equipmentType>
+    <label>M84 stun grenade</label>
+    <description>A stun grenade is a non-lethal explosive device used to temporarily disorient an enemy's senses.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon_M84StunGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractGrenade</soundInteract>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MarketValue>300</MarketValue>
+      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+    </statBases>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <verbs>
+      <li>
+        <label>throw M84 stun grenade</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>12.9</range>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <projectileDef>Proj_M84StunGrenade_HC</projectileDef>
       </li>
     </verbs>
   </ThingDef>
