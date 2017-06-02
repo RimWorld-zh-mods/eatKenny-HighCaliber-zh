@@ -51,6 +51,9 @@
 
   <Bullet_5dot56x45mm_HC.label>5.56x45mm北約子彈</Bullet_5dot56x45mm_HC.label>
 
+  <Gun_FATAL515_HC.label>FATAL 515</Gun_FATAL515_HC.label>
+  <Gun_FATAL515_HC.description>FATAL 515是基於大毒蛇多用途作戰步槍（Bushmaster ACR）設計的先進下一代突擊步槍，其有更高的精度和穩定性。</Gun_FATAL515_HC.description>
+
   <Gun_FAMAS_HC.label>FAMAS G2</Gun_FAMAS_HC.label>
   <Gun_FAMAS_HC.description>FAMAS是由法國國有奈克斯特（Nexter）集團旗下的聖-艾蒂安武器工廠（Saint-Étienne Weapon Factory）設計生產的無托式輕型自動步槍。法國部隊的制式步槍。</Gun_FAMAS_HC.description>
 

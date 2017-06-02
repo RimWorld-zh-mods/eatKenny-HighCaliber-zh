@@ -10,4 +10,13 @@
   <Weapon_M14Grenade_HC.verbs.0.label>投掷M14灼热弹</Weapon_M14Grenade_HC.verbs.0.label>
 
 
+  <!-- Flashbang -->
+
+  <Proj_M84StunGrenade_HC.label>M84震撼弹</Proj_M84StunGrenade_HC.label>
+
+  <Weapon_M84StunGrenade_HC.label>M84震撼弹</Weapon_M84StunGrenade_HC.label>
+  <Weapon_M84StunGrenade_HC.description>震撼弹是一种非致命爆炸装置，用于使敌人的感官暂时性错乱。</Weapon_M84StunGrenade_HC.description>
+  <Weapon_M84StunGrenade_HC.verbs.0.label>投掷M84震撼弹</Weapon_M84StunGrenade_HC.verbs.0.label>
+
+
 </LanguageData>
