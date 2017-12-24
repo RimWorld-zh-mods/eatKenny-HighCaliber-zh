@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 	<ThingDef Name="BaseGrenadeProjectile" Abstract="True">
     <category>Projectile</category>
@@ -33,6 +33,7 @@
       <damageAmountBase>15</damageAmountBase>
       <explosionDelay>100</explosionDelay>
       <preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
 
@@ -67,12 +68,11 @@
         <warmupTime>1.5</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <ai_IsIncendiary>true</ai_IsIncendiary>
         <soundCast>ThrowGrenade</soundCast>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-        <projectileDef>Proj_M14Grenade_HC</projectileDef>
+        <defaultProjectile>Proj_M14Grenade_HC</defaultProjectile>
       </li>
     </verbs>
   </ThingDef>
@@ -91,6 +91,7 @@
       <damageDef>Stun</damageDef>
       <damageAmountBase>5</damageAmountBase>
       <explosionDelay>100</explosionDelay>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
 
@@ -122,14 +123,13 @@
         <warmupTime>1.5</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <ai_IsIncendiary>true</ai_IsIncendiary>
         <soundCast>ThrowGrenade</soundCast>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-        <projectileDef>Proj_M84StunGrenade_HC</projectileDef>
+        <defaultProjectile>Proj_M84StunGrenade_HC</defaultProjectile>
       </li>
     </verbs>
   </ThingDef>
 
-</ThingDefs>
+</Defs>

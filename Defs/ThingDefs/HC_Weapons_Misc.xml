@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs> 
+<Defs> 
   
-  
-  
- 
- 
-
   <ThingDef Name="BaseGunNoQuality" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
@@ -39,9 +34,6 @@
         <compClass>CompEquippable</compClass>
       </li>
     </comps>
-    <smeltProducts>
-      <Steel>20</Steel>
-    </smeltProducts>
   </ThingDef>
 
 <!-- ============================================================== -->
@@ -50,7 +42,7 @@
     <defName>Bullet_60mmMortarShell_HC</defName>
     <label>60mm mortar shell</label>
     <graphicData>
-      <texPath>Things/Projectile/ShellBomb</texPath>
+      <texPath>Things/Projectile/Shell</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -97,7 +89,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_60mmMortarShell_HC</projectileDef>
+        <defaultProjectile>Bullet_60mmMortarShell_HC</defaultProjectile>
         <forcedMissRadius>14</forcedMissRadius>
         <warmupTime>5</warmupTime>
         <range>70</range>
@@ -110,9 +102,6 @@
         <muzzleFlashScale>14</muzzleFlashScale>
       </li>
     </verbs>
-    <smeltProducts>
-      <Steel>150</Steel>
-    </smeltProducts>
 </ThingDef>
 
-</ThingDefs>
+</Defs>

@@ -1,39 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 
-  <ThingDef Name="BaseGun" Abstract="True">
-    <category>Item</category>
-    <thingClass>ThingWithComps</thingClass>
-    <equipmentType>Primary</equipmentType>
-    <pathCost>10</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <selectable>True</selectable>
-    <graphicData>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>2</DeteriorationRate>
-      <SellPriceFactor>0.5</SellPriceFactor>
-    </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
-    <techLevel>Industrial</techLevel>
-    <thingCategories>
+  <ThingDef Name="BaseGun" Abstract="True" ParentName="BaseWeapon">
+		<techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<thingCategories>
       <li>WeaponsRanged</li>
     </thingCategories>
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
       <li>
         <compClass>CompQuality</compClass>
       </li>
@@ -55,9 +33,9 @@
         <li>TableMachining</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
-
 
   <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
     <weaponTags>
@@ -83,6 +61,8 @@
       <shaderType>Transparent</shaderType>
     </graphicData>
   </ThingDef>
+
+ 
 
 <!-- ============================================================== -->
 
@@ -129,7 +109,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_25mmGrenade_HC</projectileDef>
+        <defaultProjectile>Bullet_25mmGrenade_HC</defaultProjectile>
         <warmupTime>1.8</warmupTime>
         <range>29</range>
         <soundCast>ShotIncendiaryLauncher</soundCast>
@@ -137,6 +117,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -153,7 +152,7 @@
     </projectile>
   </ThingDef>
 
-<ThingDef ParentName="BaseHumanGun">
+  <ThingDef ParentName="BaseHumanGun">
     <defName>Gun_Saiga12K_HC</defName>
     <label>Saiga-12K</label>
     <description>The Saiga-12K is a 12-gauge automatic shotgun, patterned after the Kalashnikov series of assault rifles and named for the Saiga antelope. Like the Kalashnikov rifle variants, it is a rotating bolt, gas-operated gun that feeds from a box magazine.</description>
@@ -178,7 +177,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_12gauge_HC</projectileDef>
+        <defaultProjectile>Bullet_12gauge_HC</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>12</range>
         <burstShotCount>3</burstShotCount>
@@ -188,6 +187,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
 <ThingDef ParentName="BaseBullet">
@@ -226,7 +244,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_dot338Lapua_HC</projectileDef>
+        <defaultProjectile>Bullet_dot338Lapua_HC</defaultProjectile>
         <warmupTime>4</warmupTime>
         <range>49</range>
         <soundCast>ShotAWM</soundCast>
@@ -234,6 +252,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
     <weaponTags>
       <li>SniperRifle</li>
     </weaponTags>
@@ -244,9 +281,6 @@
       <MoveSpeed>-0.7</MoveSpeed>
       <WorkSpeedGlobal>-0.07</WorkSpeedGlobal>
     </equippedStatOffsets>
-    <smeltProducts>
-      <Steel>30</Steel>
-    </smeltProducts>
   </ThingDef>
 
  <ThingDef ParentName="BaseBullet">
@@ -258,7 +292,7 @@
     </graphicData>
     <projectile>
       <damageDef>HC_ArmorPiercing</damageDef>
-      <damageAmountBase>45</damageAmountBase>
+      <damageAmountBase>50</damageAmountBase>
       <speed>95</speed>
     </projectile>
   </ThingDef>
@@ -285,7 +319,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_dot50BMG_HC</projectileDef>
+        <defaultProjectile>Bullet_dot50BMG_HC</defaultProjectile>
         <warmupTime>4.5</warmupTime>
         <range>53</range>
         <soundCast>ShotM82</soundCast>
@@ -293,6 +327,25 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
     <weaponTags>
       <li>SniperRifle</li>
     </weaponTags>
@@ -303,9 +356,6 @@
       <MoveSpeed>-1.4</MoveSpeed>
       <WorkSpeedGlobal>-0.14</WorkSpeedGlobal>
     </equippedStatOffsets>
-    <smeltProducts>
-      <Steel>35</Steel>
-    </smeltProducts>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -344,12 +394,31 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_7dot62x54mmR_HC</projectileDef>
+        <defaultProjectile>Bullet_7dot62x54mmR_HC</defaultProjectile>
         <warmupTime>2.5</warmupTime>
         <range>42</range>
         <soundCast>ShotSVU</soundCast>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
     <weaponTags>
       <li>SniperRifle</li>
     </weaponTags>
@@ -394,7 +463,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot7x28mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot7x28mm_HC</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>24</range>
         <burstShotCount>4</burstShotCount>
@@ -404,6 +473,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
  <ThingDef ParentName="BaseBullet">
@@ -442,7 +530,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_9x19mm_HC</projectileDef>
+        <defaultProjectile>Bullet_9x19mm_HC</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>24</range>
         <burstShotCount>3</burstShotCount>
@@ -452,6 +540,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
  <ThingDef ParentName="BaseBullet">
@@ -490,7 +597,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_dot45ACP_HC</projectileDef>
+        <defaultProjectile>Bullet_dot45ACP_HC</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>20</range>
         <burstShotCount>3</burstShotCount>
@@ -500,6 +607,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -538,7 +664,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot45x39mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot45x39mm_HC</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>31</range>
         <burstShotCount>3</burstShotCount>
@@ -548,6 +674,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -572,7 +717,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot45x39mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot45x39mm_HC</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>26</range>
         <burstShotCount>3</burstShotCount>
@@ -582,6 +727,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
  <ThingDef ParentName="BaseBullet">
@@ -625,7 +789,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot56x45mm_HC</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>32</range>
         <burstShotCount>3</burstShotCount>
@@ -635,6 +799,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
 <ThingDef ParentName="BaseHumanGun">
@@ -662,7 +845,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot56x45mm_HC</defaultProjectile>
         <warmupTime>0.8</warmupTime>
         <range>31</range>
         <burstShotCount>3</burstShotCount>
@@ -672,6 +855,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -699,7 +901,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot56x45mm_HC</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>29</range>
         <burstShotCount>3</burstShotCount>
@@ -707,6 +909,25 @@
         <soundCast>ShotM4A1</soundCast>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -734,7 +955,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot56x45mm_HC</defaultProjectile>
         <warmupTime>0.7</warmupTime>
         <range>29</range>
         <burstShotCount>3</burstShotCount>
@@ -744,6 +965,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -771,7 +1011,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot56x45mm_HC</defaultProjectile>
         <warmupTime>0.8</warmupTime>
         <range>31</range>
         <burstShotCount>3</burstShotCount>
@@ -781,6 +1021,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -808,7 +1067,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot56x45mm_HC</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>32</range>
         <burstShotCount>3</burstShotCount>
@@ -818,6 +1077,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
  <ThingDef ParentName="BaseHumanGun">
@@ -848,7 +1126,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot56x45mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot56x45mm_HC</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>34</range>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -858,6 +1136,17 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
     <equippedStatOffsets>
       <MoveSpeed>-0.8</MoveSpeed>
       <WorkSpeedGlobal>-0.08</WorkSpeedGlobal>
@@ -903,7 +1192,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_7dot62x51mm_HC</projectileDef>
+        <defaultProjectile>Bullet_7dot62x51mm_HC</defaultProjectile>
         <warmupTime>1</warmupTime>
         <range>35</range>
         <burstShotCount>2</burstShotCount>
@@ -913,6 +1202,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -940,7 +1248,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_7dot62x51mm_HC</projectileDef>
+        <defaultProjectile>Bullet_7dot62x51mm_HC</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <range>40</range>
         <burstShotCount>1</burstShotCount>
@@ -949,6 +1257,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -959,7 +1286,7 @@
       <texPath>Things/Item/Equipment/Gun_Glock17</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <soundInteract>InteractAutopistol</soundInteract>
     <statBases>
       <MarketValue>175</MarketValue>
       <Mass>0.9</Mass>
@@ -977,14 +1304,33 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_9x19mm_HC</projectileDef>
+        <defaultProjectile>Bullet_9x19mm_HC</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>24</range>
-        <soundCast>ShotPistol</soundCast>
+        <soundCast>ShotAutopistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1009,7 +1355,7 @@
       <texPath>Things/Item/Equipment/Gun_DesertEagle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <soundInteract>InteractAutopistol</soundInteract>
     <statBases>
       <MarketValue>300</MarketValue>
       <Mass>2</Mass>
@@ -1023,7 +1369,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_dot50AE_HC</projectileDef>
+        <defaultProjectile>Bullet_dot50AE_HC</defaultProjectile>
         <warmupTime>0.4</warmupTime>
         <range>18</range>
         <soundCast>Shot50AE500MAG</soundCast>
@@ -1031,6 +1377,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -1055,7 +1420,7 @@
       <texPath>Things/Item/Equipment/Gun_SW500</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <soundInteract>InteractAutopistol</soundInteract>
     <statBases>
       <MarketValue>300</MarketValue>
       <Mass>2</Mass>
@@ -1069,7 +1434,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_dot500Mag_HC</projectileDef>
+        <defaultProjectile>Bullet_dot500Mag_HC</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>18</range>
         <soundCast>Shot50AE500MAG</soundCast>
@@ -1077,6 +1442,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
 
@@ -1088,7 +1472,7 @@
       <texPath>Things/Item/Equipment/Gun_P226</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <soundInteract>InteractAutopistol</soundInteract>
     <statBases>
       <MarketValue>250</MarketValue>
       <Mass>1</Mass>
@@ -1106,12 +1490,31 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_9x19mm_HC</projectileDef>
+        <defaultProjectile>Bullet_9x19mm_HC</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>24</range>
         <soundCast>ShotP226</soundCast>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -1122,7 +1525,7 @@
       <texPath>Things/Item/Equipment/Gun_HK45</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <soundInteract>InteractAutopistol</soundInteract>
     <statBases>
       <MarketValue>250</MarketValue>
       <Mass>0.9</Mass>
@@ -1140,7 +1543,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_dot45ACP_HC</projectileDef>
+        <defaultProjectile>Bullet_dot45ACP_HC</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>20</range>
         <soundCast>ShotHK45</soundCast>
@@ -1148,6 +1551,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanGun">
@@ -1158,7 +1580,7 @@
       <texPath>Things/Item/Equipment/Gun_Fiveseven</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
+    <soundInteract>InteractAutopistol</soundInteract>
     <statBases>
       <MarketValue>250</MarketValue>
       <Mass>0.7</Mass>
@@ -1176,7 +1598,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_5dot7x28mm_HC</projectileDef>
+        <defaultProjectile>Bullet_5dot7x28mm_HC</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>24</range>
         <soundCast>ShotFiveseven</soundCast>
@@ -1184,6 +1606,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+	<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
-</ThingDefs>
+</Defs>
